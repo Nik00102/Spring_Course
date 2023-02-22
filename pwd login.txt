@@ -1,0 +1,5 @@
+Root pwd: springcourse
+Connection: my_connection
+User: bestuser
+Pwd: bestuser
+DB: my_db
