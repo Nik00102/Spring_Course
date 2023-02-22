@@ -11,10 +11,13 @@
 
 <form:form action = "showDetails" modelAttribute="employee">
     Name <form:input path="name"></form:input>
+    <form:errors path="name"></form:errors>
     <br><br>
     Surname <form:input path="sirname"></form:input>
+    <form:errors path="sirname"></form:errors>
     <br><br>
     Salary <form:input path="salary"></form:input>
+    <form:errors path="salary"></form:errors>
     <br><br>
     Department <form:select path="department">
 <%--    hardcoded, example from Map<String, String> departments (Employee.class) below--%>
@@ -38,6 +41,13 @@
 <%--    FR <form:checkbox path="languages" value="French"></form:checkbox>--%>
     <form:checkboxes path="languages" items="${employee.languageList}"></form:checkboxes>
     <br><br>
+    PhoneNumber <form:input path="phoneNumber"></form:input>
+    <form:errors path="phoneNumber"></form:errors>
+    <br><br>
+    eMail <form:input path="email"></form:input>
+    <form:errors path="email"></form:errors>
+    <br><br>
+
 
     <input type="submit" value="ok">
 
