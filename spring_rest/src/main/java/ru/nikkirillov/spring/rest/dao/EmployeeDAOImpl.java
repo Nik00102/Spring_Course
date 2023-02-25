@@ -1,15 +1,13 @@
-package ru.nikkirillov.spring.mvc_hibernate_aop.dao;
+package ru.nikkirillov.spring.rest.dao;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
 import org.hibernate.query.Query;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Repository;
-import ru.nikkirillov.spring.mvc_hibernate_aop.entity.Employee;
+import ru.nikkirillov.spring.rest.entity.Employee;
 
 
-
-import javax.transaction.Transactional;
 import java.util.List;
 
 @Repository

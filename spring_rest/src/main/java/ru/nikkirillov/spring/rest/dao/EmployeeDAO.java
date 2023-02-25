@@ -1,10 +1,12 @@
-package ru.nikkirillov.spring.mvc_hibernate_aop.service;
+package ru.nikkirillov.spring.rest.dao;
 
-import ru.nikkirillov.spring.mvc_hibernate_aop.entity.Employee;
+
+
+import ru.nikkirillov.spring.rest.entity.Employee;
 
 import java.util.List;
 
-public interface EmployeeService {
+public interface EmployeeDAO {
     List<Employee> getAllEmployees();
     void saveEmployee(Employee employee);
     Employee getEmployee(int id);

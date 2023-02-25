@@ -3,9 +3,7 @@ package ru.nikkirillov.spring.mvc;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
-import org.springframework.web.bind.annotation.ModelAttribute;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.validation.Valid;
@@ -26,7 +24,8 @@ public class MyController {
         return "ask-emp-details-view";
     }
 
-    @RequestMapping("/showDetails")
+    //@RequestMapping(path = "/showDetails", method = RequestMethod.GET) тоже самое что ниже
+    @GetMapping("/showDetails")
     public String showEmpDetailsView(@Valid @ModelAttribute(name = "employee") Employee emp,
                                      BindingResult result) {
         // show dynamic page (using annotation @ModelAttribute with @Valid for validation)

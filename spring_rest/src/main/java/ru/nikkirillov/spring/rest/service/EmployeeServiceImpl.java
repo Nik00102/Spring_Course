@@ -1,9 +1,10 @@
-package ru.nikkirillov.spring.mvc_hibernate_aop.service;
+package ru.nikkirillov.spring.rest.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
-import ru.nikkirillov.spring.mvc_hibernate_aop.dao.EmployeeDAO;
-import ru.nikkirillov.spring.mvc_hibernate_aop.entity.Employee;
+import ru.nikkirillov.spring.rest.dao.EmployeeDAO;
+import ru.nikkirillov.spring.rest.entity.Employee;
+
 
 import javax.transaction.Transactional;
 import java.util.List;

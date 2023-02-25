@@ -9,7 +9,8 @@
 <br>
 <br>
 
-<form:form action = "showDetails" modelAttribute="employee">
+<%--    get - передает данные при отправке; post - не передает данные--%>
+<form:form action = "showDetails" modelAttribute="employee" method="get">
     Name <form:input path="name"></form:input>
     <form:errors path="name"></form:errors>
     <br><br>

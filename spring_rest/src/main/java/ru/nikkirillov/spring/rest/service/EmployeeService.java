@@ -1,6 +1,8 @@
-package ru.nikkirillov.spring.mvc_hibernate_aop.service;
+package ru.nikkirillov.spring.rest.service;
 
-import ru.nikkirillov.spring.mvc_hibernate_aop.entity.Employee;
+
+
+import ru.nikkirillov.spring.rest.entity.Employee;
 
 import java.util.List;
 
