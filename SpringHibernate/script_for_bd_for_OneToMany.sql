@@ -14,3 +14,4 @@ CREATE TABLE my_db.employees (
   department_id int,
   PRIMARY KEY (id),
   FOREIGN KEY (department_id) REFERENCES my_db.departments(id));
+  
